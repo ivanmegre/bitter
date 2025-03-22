@@ -40,17 +40,6 @@ class _TitleStyle {
 
   _TitleStyle(this._fontFamily);
 
-  TextStyle get regularExtraLarge => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.regular,
-        fontSize: _FontSize.extraLarge,
-      );
-
-  TextStyle get regularLarge => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.regular,
-        fontSize: _FontSize.extraLarge,
-      );
   TextStyle get regularMedium => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
@@ -64,26 +53,6 @@ class _TitleStyle {
   TextStyle get boldLarge => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.bold,
-        fontSize: _FontSize.large,
-      );
-  TextStyle get semiBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.semiBold,
-        fontSize: _FontSize.extraLarge,
-      );
-  TextStyle get subtitle => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.regular,
-        fontSize: _FontSize.large,
-      );
-  TextStyle get subtitleBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.bold,
-        fontSize: _FontSize.large,
-      );
-  TextStyle get subtitleSemiBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.semiBold,
         fontSize: _FontSize.large,
       );
 }
@@ -109,31 +78,6 @@ class _BodyStyle {
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.small,
       );
-  TextStyle get bold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.bold,
-        fontSize: _FontSize.medium,
-      );
-  TextStyle get semiBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.semiBold,
-        fontSize: _FontSize.medium,
-      );
-  TextStyle get caption => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.regular,
-        fontSize: _FontSize.small,
-      );
-  TextStyle get captionBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.bold,
-        fontSize: _FontSize.small,
-      );
-  TextStyle get captionSemiBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.semiBold,
-        fontSize: _FontSize.small,
-      );
 }
 
 class _LabelStyle {
@@ -155,16 +99,6 @@ class _LabelStyle {
   TextStyle get regularSmall => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
-        fontSize: _FontSize.small,
-      );
-  TextStyle get bold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.bold,
-        fontSize: _FontSize.small,
-      );
-  TextStyle get semiBold => TextStyle(
-        fontFamily: _fontFamily,
-        fontWeight: _fontWeight.semiBold,
         fontSize: _FontSize.small,
       );
 }
