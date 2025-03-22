@@ -10,10 +10,10 @@ class Fonts {
 }
 
 class _FontSize {
-  static const double small = 12.0;
-  static const double medium = 14.0;
-  static const double large = 16.0;
-  static const double extraLarge = 20.0;
+  static const double small = 14;
+  static const double medium = 18;
+  static const double large = 32;
+  static const double extraLarge = 60;
 }
 
 class _FontWeight {
