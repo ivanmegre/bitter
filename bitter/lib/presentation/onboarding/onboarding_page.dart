@@ -20,37 +20,35 @@ class OnboardingPage extends StatelessWidget {
             colorFilter: ColorFilter.mode(ColorPalette.softBlack, BlendMode.darken),
           ),
         ),
-        child: Center(
-          child: SafeArea(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  context.localization.onboardingPage_appBarTitleCopy,
-                  style: Fonts.noto.title.boldLarge,
+        child: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                context.localization.onboardingPage_appBarTitleCopy,
+                style: Fonts.noto.title.boldLarge,
+              ),
+              Spacer(),
+              Text(
+                context.localization.onboardingPage_bodyMainCopy,
+                textAlign: TextAlign.center,
+                style: Fonts.noto.title.extraBoldLarge,
+              ),
+              spacer(),
+              Text(
+                context.localization.onboardingPage_bodySubtextCopy,
+                textAlign: TextAlign.center,
+                style: Fonts.noto.body.regularSmall,
+              ),
+              Spacer(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Button.onboarding(
+                  label: context.localization.onboardingPage_buttonCopy,
+                  onPressed: () {},
                 ),
-                Spacer(),
-                Text(
-                  context.localization.onboardingPage_bodyMainCopy,
-                  textAlign: TextAlign.center,
-                  style: Fonts.noto.title.extraBoldLarge,
-                ),
-                spacer(size: 8),
-                Text(
-                  context.localization.onboardingPage_bodySubtextCopy,
-                  textAlign: TextAlign.center,
-                  style: Fonts.noto.body.regularSmall,
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Button.onboarding(
-                    label: context.localization.onboardingPage_buttonCopy,
-                    onPressed: () {},
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

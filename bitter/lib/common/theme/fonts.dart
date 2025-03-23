@@ -70,7 +70,7 @@ class _TitleStyle {
       );
   TextStyle get extraBoldLarge => TextStyle(
         fontFamily: _fontFamily,
-        fontWeight: _fontWeight.bold,
+        fontWeight: _fontWeight.extraBold,
         fontSize: _FontSize.large,
         color: ColorPalette.lightGreen,
       );
