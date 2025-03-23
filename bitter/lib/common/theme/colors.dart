@@ -13,6 +13,7 @@ class ColorPalette {
   static const darkGreen = Color(0xFF214E34);
   static const white = Color(0xFFFFFFFF);
   static const black = Color(0x00000000);
-  static const softBlack = Color(0xFF171411);
-  static const lightGrey = Color(0xFFB5B3B1);
+  static const softBlack = Color(0x99171411);
+  static const lightGray = Color(0xFFB5B3B1);
+  static const grayOverlay = Color(0x14B5B3B1);
 }
