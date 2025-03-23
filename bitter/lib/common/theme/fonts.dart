@@ -1,3 +1,4 @@
+import 'package:bitter/common/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class Fonts {
@@ -13,7 +14,8 @@ class _FontSize {
   static const double small = 14;
   static const double medium = 18;
   static const double large = 32;
-  static const double extraLarge = 60;
+  static const double extraLarge = 45;
+  static const double max = 64;
 }
 
 class _FontWeight {
@@ -22,6 +24,7 @@ class _FontWeight {
   FontWeight get semiBold => FontWeight.w600;
   FontWeight get regular => FontWeight.w400;
   FontWeight get bold => FontWeight.w700;
+  FontWeight get extraBold => FontWeight.w900;
 }
 
 class _FontFamily {
@@ -44,16 +47,32 @@ class _TitleStyle {
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.medium,
+        color: ColorPalette.lightGreen,
+      );
+
+  TextStyle get regularLarge => TextStyle(
+        fontFamily: _fontFamily,
+        fontWeight: _fontWeight.regular,
+        fontSize: _FontSize.large,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get boldExtraLarge => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.bold,
         fontSize: _FontSize.extraLarge,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get boldLarge => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.bold,
         fontSize: _FontSize.large,
+        color: ColorPalette.lightGreen,
+      );
+  TextStyle get extraBoldLarge => TextStyle(
+        fontFamily: _fontFamily,
+        fontWeight: _fontWeight.bold,
+        fontSize: _FontSize.large,
+        color: ColorPalette.lightGreen,
       );
 }
 
@@ -67,16 +86,31 @@ class _BodyStyle {
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.medium,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get regularLarge => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.large,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get regularSmall => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.small,
+        color: ColorPalette.lightGreen,
+      );
+  TextStyle get boldLarge => TextStyle(
+        fontFamily: _fontFamily,
+        fontWeight: _fontWeight.bold,
+        fontSize: _FontSize.large,
+        color: ColorPalette.lightGreen,
+      );
+  TextStyle get boldExtraLarge => TextStyle(
+        fontFamily: _fontFamily,
+        fontWeight: _fontWeight.bold,
+        fontSize: _FontSize.extraLarge,
+        color: ColorPalette.lightGreen,
       );
 }
 
@@ -90,15 +124,18 @@ class _LabelStyle {
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.small,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get regularMedium => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.medium,
+        color: ColorPalette.lightGreen,
       );
   TextStyle get regularSmall => TextStyle(
         fontFamily: _fontFamily,
         fontWeight: _fontWeight.regular,
         fontSize: _FontSize.small,
+        color: ColorPalette.lightGreen,
       );
 }
